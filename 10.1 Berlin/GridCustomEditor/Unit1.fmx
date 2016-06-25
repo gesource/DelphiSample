@@ -1,0 +1,25 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object StringGrid1: TStringGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    OnCreateCustomEditor = StringGrid1CreateCustomEditor
+    Viewport.Width = 620.000000000000000000
+    Viewport.Height = 455.000000000000000000
+    object StringColumn1: TStringColumn
+    end
+  end
+end

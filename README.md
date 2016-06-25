@@ -1,1 +1,7 @@
 # DelphiSample
+
+## Description
+
+Delphiのサンプルコードです。
+
+
