@@ -1,0 +1,123 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 499
+  ClientWidth = 338
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ButtonDefault: TButton
+    Align = Bottom
+    Position.Y = 451.000000000000000000
+    Size.Width = 338.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Default'
+    OnClick = ButtonDefaultClick
+  end
+  object ListBoxStyleNames: TListBox
+    Align = Top
+    Size.Width = 338.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = ListBoxStyleNamesChange
+    Viewport.Width = 334.000000000000000000
+    Viewport.Height = 213.000000000000000000
+  end
+  object Button1: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 224.000000000000000000
+    TabOrder = 4
+    Text = 'Button1'
+  end
+  object CheckBox1: TCheckBox
+    Position.X = 16.000000000000000000
+    Position.Y = 264.000000000000000000
+    TabOrder = 5
+    Text = 'CheckBox1'
+  end
+  object RadioButton1: TRadioButton
+    Position.X = 16.000000000000000000
+    Position.Y = 288.000000000000000000
+    TabOrder = 7
+    Text = 'RadioButton1'
+  end
+  object RadioButton2: TRadioButton
+    Position.X = 16.000000000000000000
+    Position.Y = 312.000000000000000000
+    TabOrder = 6
+    Text = 'RadioButton1'
+  end
+  object Label1: TLabel
+    Position.X = 104.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Label1'
+  end
+  object ProgressBar1: TProgressBar
+    Orientation = Horizontal
+    Position.X = 120.000000000000000000
+    Position.Y = 264.000000000000000000
+    Value = 50.000000000000000000
+  end
+  object TrackBar1: TTrackBar
+    CanParentFocus = True
+    Orientation = Horizontal
+    Position.X = 200.000000000000000000
+    Position.Y = 232.000000000000000000
+    TabOrder = 10
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    Position.X = 16.000000000000000000
+    Position.Y = 336.000000000000000000
+  end
+  object SpeedButton1: TSpeedButton
+    Position.X = 128.000000000000000000
+    Position.Y = 288.000000000000000000
+    Text = 'SpeedButton1'
+  end
+  object DateEdit1: TDateEdit
+    Date = 42549.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 368.000000000000000000
+    TabOrder = 13
+  end
+  object TimeEdit1: TTimeEdit
+    Time = 0.461805555555555600
+    Position.X = 120.000000000000000000
+    Position.Y = 368.000000000000000000
+    TabOrder = 14
+  end
+  object NumberBox1: TNumberBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 15
+    Cursor = crIBeam
+    Position.X = 120.000000000000000000
+    Position.Y = 336.000000000000000000
+  end
+  object ComboEdit1: TComboEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 16
+    ItemHeight = 19.000000000000000000
+    Items.Strings = (
+      'Delphi'
+      'C++Builder'
+      'RAD Studio')
+    ItemIndex = -1
+    Position.X = 16.000000000000000000
+    Position.Y = 400.000000000000000000
+  end
+end
