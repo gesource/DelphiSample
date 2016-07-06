@@ -1,0 +1,111 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 216
+  ClientWidth = 263
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object RadioButton1: TRadioButton
+    Position.X = 128.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 0
+    Text = 'RadioButton1'
+  end
+  object RadioButton2: TRadioButton
+    Position.X = 128.000000000000000000
+    Position.Y = 40.000000000000000000
+    TabOrder = 1
+    Text = 'RadioButton2'
+  end
+  object RadioButton3: TRadioButton
+    Position.X = 128.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 2
+    Text = 'RadioButton3'
+  end
+  object ProxyObject1: TProxyObject
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 44
+    Top = 45
+    object LinkControlToField1: TLinkControlToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = BindSourceDB1
+      FieldName = 'Value'
+      Control = Edit1
+      Track = False
+    end
+    object LinkPropertyToFieldIsChecked: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = BindSourceDB1
+      FieldName = 'RadioButton1'
+      Component = RadioButton1
+      ComponentProperty = 'IsChecked'
+    end
+    object LinkPropertyToFieldIsChecked2: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = BindSourceDB1
+      FieldName = 'RadioButton2'
+      Component = RadioButton2
+      ComponentProperty = 'IsChecked'
+    end
+    object LinkPropertyToFieldIsChecked3: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = BindSourceDB1
+      FieldName = 'RadioButton3'
+      Component = RadioButton3
+      ComponentProperty = 'IsChecked'
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 48
+    Top = 96
+  end
+  object FDMemTable1: TFDMemTable
+    OnCalcFields = FDMemTable1CalcFields
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 48
+    Top = 152
+    object FDMemTable1Value: TIntegerField
+      FieldName = 'Value'
+    end
+    object FDMemTable1RadioButton1: TBooleanField
+      FieldKind = fkCalculated
+      FieldName = 'RadioButton1'
+      Calculated = True
+    end
+    object FDMemTable1RadioButton2: TBooleanField
+      FieldKind = fkCalculated
+      FieldName = 'RadioButton2'
+      Calculated = True
+    end
+    object FDMemTable1RadioButton3: TBooleanField
+      FieldKind = fkCalculated
+      FieldName = 'RadioButton3'
+      Calculated = True
+    end
+  end
+end
